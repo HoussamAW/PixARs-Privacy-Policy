@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy – PixARs</title>
+    <title>Privacy Policy – StikAR</title>
     <style>
         :root {
-            --bg: #121212;
-            --card: #1c1c1e;
+            --bg: #15151b;
+            --card: #1d1d24;
             --text: #f5f5f7;
-            --muted: #b0b0b5;
-            --accent: #ed8754;
-            --accent-soft: rgba(237, 135, 84, 0.14);
+            --muted: #b8b8c2;
+            --accent-yellow: #e7b847;
+            --accent-blue: #3a43a5;
+            --accent-green: #6aa483;
+            --accent-pink: #d93a63;
+            --accent-orange: #e1783a;
+            --accent: var(--accent-yellow);
+            --accent-soft: rgba(231, 184, 71, 0.16);
             --border: rgba(255, 255, 255, 0.08);
+            --hero-glow-1: rgba(58, 67, 165, 0.18);
+            --hero-glow-2: rgba(231, 184, 71, 0.12);
         }
 
         * {
@@ -27,8 +34,9 @@
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background:
-                radial-gradient(circle at top, rgba(237, 135, 84, 0.16), transparent 28%),
-                linear-gradient(180deg, #111111 0%, #181818 100%);
+                radial-gradient(circle at top left, var(--hero-glow-1), transparent 30%),
+                radial-gradient(circle at bottom right, var(--hero-glow-2), transparent 32%),
+                linear-gradient(180deg, #111116 0%, #191922 100%);
             color: var(--text);
             line-height: 1.7;
         }
@@ -40,7 +48,10 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, rgba(237, 135, 84, 0.2), rgba(237, 135, 84, 0.06));
+            background:
+                radial-gradient(circle at top right, rgba(58, 67, 165, 0.22), transparent 32%),
+                radial-gradient(circle at bottom left, rgba(231, 184, 71, 0.16), transparent 30%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
             border: 1px solid var(--border);
             border-radius: 28px;
             padding: 40px 28px;
@@ -53,7 +64,7 @@
             padding: 8px 14px;
             border-radius: 999px;
             background: var(--accent-soft);
-            color: var(--accent);
+            color: var(--accent-yellow);
             font-size: 13px;
             font-weight: 700;
             letter-spacing: 0.04em;
@@ -105,6 +116,14 @@
             box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
         }
 
+        .section:nth-child(2n) h2 {
+            color: var(--accent-blue);
+        }
+
+        .section:nth-child(2n + 1) h2 {
+            color: var(--accent-yellow);
+        }
+
         h2 {
             margin: 0 0 14px;
             font-size: 26px;
@@ -114,7 +133,7 @@
         h3 {
             margin: 22px 0 8px;
             font-size: 18px;
-            color: var(--accent);
+            color: var(--accent-green);
         }
 
         p {
@@ -131,7 +150,7 @@
         }
 
         a {
-            color: var(--accent);
+            color: var(--accent-pink);
             text-decoration: none;
         }
 
@@ -164,16 +183,17 @@
 <body>
     <main class="container">
         <section class="hero">
-            <div class="badge">PixARs Privacy Policy</div>
+            <div class="badge">StikAR Privacy Policy</div>
             <h1>Your privacy matters.</h1>
             <p class="subtitle">
-                This Privacy Policy explains how PixARs collects, uses, stores, and protects information when you use the app.
+                This Privacy Policy explains how StikAR works, what limited information is used in the app, and how your privacy is respected.
                 We want this page to be simple, transparent, and easy to understand.
             </p>
             <div class="meta">
-                <div class="meta-item"><strong>App:</strong> PixARs</div>
-                <div class="meta-item"><strong>Effective date:</strong> March 6, 2026</div>
-                <div class="meta-item"><strong>Contact:</strong> pixarssupport@gmail.com</div>
+                <div class="meta-item"><strong>App:</strong> StikAR</div>
+                <div class="meta-item"><strong>Effective date:</strong> March 10, 2026</div>
+                <div class="meta-item"><strong>Contact:</strong> stikarsupport@gmail.com</div>
+                <div class="meta-item"><strong>Address:</strong> Corso Nicolangelo Protopisani, 70, 80146 Napoli NA</div>
             </div>
         </section>
 
@@ -181,55 +201,52 @@
             <article class="section">
                 <h2>1. Overview</h2>
                 <p>
-                    PixARs is a sticker-based app that allows users to create, place, and interact with digital stickers.
-                    This Privacy Policy describes what information may be collected through the app and how that information is used.
+                    StikAR is an augmented reality sticker app that allows users to place digital stickers in real-world locations and find them again when they return to the same place.
+                    This Privacy Policy explains what the app uses to function and how your privacy is protected.
                 </p>
                 <p>
-                    By using PixARs, you agree to the practices described in this Privacy Policy.
+                    By using StikAR, you agree to the practices described in this Privacy Policy.
                 </p>
             </article>
 
             <article class="section">
-                <h2>2. Information We May Collect</h2>
+                <h2>2. Information We Use</h2>
 
-                <h3>a. Information you provide</h3>
-                <p>Depending on how PixARs works, we may collect information such as:</p>
-                <ul>
-                    <li>Your nickname, username, or profile name</li>
-                    <li>Content you create in the app, including stickers or related metadata</li>
-                    <li>Messages or support requests you send to us</li>
-                </ul>
+                <h3>a. Username only</h3>
+                <p>
+                    To use StikAR, you only provide a username. We do not require your real name, phone number, or other personal identity information.
+                </p>
 
-                <h3>b. Information collected automatically</h3>
-                <p>When you use PixARs, certain technical information may be collected automatically, such as:</p>
-                <ul>
-                    <li>Device type, operating system, and app version</li>
-                    <li>Basic usage data, crash logs, and diagnostics</li>
-                    <li>Approximate or precise location data, only if location-based features are used and permission is granted</li>
-                </ul>
+                <h3>b. No personal data stored</h3>
+                <p>
+                    StikAR does not store personal data such as your full name, address, payment information, or private profile details.
+                </p>
+
+                <h3>c. Camera and location access</h3>
+                <p>
+                    The app requires access to your camera and location because these features are necessary for the core experience.
+                    The camera is used to place and view stickers in augmented reality, and location is used to help the app find the stickers again when you return to the same place.
+                </p>
             </article>
 
             <article class="section">
-                <h2>3. How We Use Information</h2>
-                <p>We may use the collected information to:</p>
+                <h2>3. How the App Uses Access and Information</h2>
+                <p>StikAR uses only what is necessary to make the app work, including:</p>
                 <ul>
-                    <li>Provide and improve PixARs features</li>
-                    <li>Save and display stickers and user-generated content</li>
-                    <li>Maintain app security and prevent abuse</li>
-                    <li>Fix bugs, improve performance, and analyze app reliability</li>
-                    <li>Respond to support requests and user questions</li>
+                    <li>Allowing you to create and use your username inside the app</li>
+                    <li>Using the camera to place and view stickers in augmented reality</li>
+                    <li>Using location to help restore stickers when you come back to the same area</li>
+                    <li>Maintaining the basic functionality, stability, and security of the app</li>
                 </ul>
             </article>
 
             <article class="section">
                 <h2>4. Location Data</h2>
                 <p>
-                    PixARs may use location data if the app includes features that depend on where the user is located,
-                    such as discovering or restoring stickers in specific places.
+                    Location access is required for StikAR to work as intended. It helps the app associate stickers with places so they can be found again later.
                 </p>
                 <p>
-                    Location access is only used with your permission. You can manage or revoke location access at any time
-                    in your device settings.
+                    Location is used for app functionality only. You can manage or revoke location access at any time in your device settings, but some app features may no longer function correctly without it.
                 </p>
             </article>
 
@@ -239,43 +256,40 @@
                     We do not sell your personal information.
                 </p>
                 <p>
-                    We may share limited information only when necessary:
+                    Because StikAR does not store personal profile data beyond a username for app use, there is no personal account data sold or shared for marketing purposes.
                 </p>
-                <ul>
-                    <li>With service providers that help operate the app, such as hosting, database, analytics, or crash reporting tools</li>
-                    <li>When required by law, regulation, legal process, or government request</li>
-                    <li>To protect the rights, safety, and security of users, the app, or the public</li>
-                </ul>
+                <p>
+                    Limited technical information may only be processed when necessary to operate, secure, or improve the app, or when required by law.
+                </p>
             </article>
 
             <article class="section">
                 <h2>6. Data Storage and Security</h2>
                 <p>
-                    We take reasonable measures to protect information against unauthorized access, loss, misuse, or alteration.
+                    We take reasonable measures to protect the limited app-related information used by StikAR against unauthorized access, loss, misuse, or alteration.
                     However, no system can be guaranteed to be completely secure.
                 </p>
                 <p>
-                    We keep information only for as long as necessary to operate the app, comply with legal obligations,
-                    resolve disputes, and enforce our policies.
+                    Since StikAR is designed to minimize personal data collection, we only aim to use and keep the minimum information necessary for the app to function.
                 </p>
             </article>
 
             <article class="section">
                 <h2>7. Your Choices</h2>
-                <p>You may have the ability to:</p>
+                <p>You may choose to:</p>
                 <ul>
-                    <li>Stop using PixARs at any time</li>
-                    <li>Request help about your stored data</li>
-                    <li>Disable permissions such as camera or location in your device settings</li>
-                    <li>Contact us to request deletion of your data, where applicable</li>
+                    <li>Stop using StikAR at any time</li>
+                    <li>Choose a username that does not reveal your identity</li>
+                    <li>Disable camera or location permissions in your device settings</li>
+                    <li>Contact us with privacy questions or support requests</li>
                 </ul>
             </article>
 
             <article class="section">
                 <h2>8. Children’s Privacy</h2>
                 <p>
-                    PixARs is not intended for children under the age required by applicable law without parental or guardian consent.
-                    If you believe a child has provided personal information without proper consent, please contact us.
+                    StikAR is not intended to be used in violation of the minimum age rules required by applicable law or platform rules.
+                    If you believe inappropriate personal information has been provided through the app, please contact us.
                 </p>
             </article>
 
@@ -283,23 +297,24 @@
                 <h2>9. Changes to This Privacy Policy</h2>
                 <p>
                     We may update this Privacy Policy from time to time. When we do, we will update the effective date shown on this page.
-                    Continued use of PixARs after changes means you accept the updated policy.
+                    Continued use of StikAR after changes means you accept the updated policy.
                 </p>
             </article>
 
             <article class="section">
                 <h2>10. Contact</h2>
                 <p>
-                    If you have any questions about this Privacy Policy or your data, you can contact us at:
+                    If you have any questions about this Privacy Policy or the way StikAR works, you can contact us at:
                 </p>
                 <p>
-                    <strong><a href="mailto:pixarssupport@gmail.com">pixarssupport@gmail.com</a></strong>
+                    <strong><a href="mailto:stikarsupport@gmail.com">stikarsupport@gmail.com</a></strong><br>
+                    Corso Nicolangelo Protopisani, 70, 80146 Napoli NA
                 </p>
             </article>
         </section>
 
         <footer class="footer">
-            © 2026 PixARs. All rights reserved.
+            © 2026 StikAR. All rights reserved.
         </footer>
     </main>
 </body>
